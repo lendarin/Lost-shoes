@@ -1,0 +1,266 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    line-height: 1.5;
+    box-sizing: border-box;
+    margin: auto 0;
+}
+h1 {
+    margin-left: 3rem;
+}
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin-left: 2rem;
+    border-bottom: 0.08rem solid black;
+}
+header h1:hover {
+    border: none;
+}
+
+header nav ul li {
+    list-style: none;
+    display: inline;
+    padding-right: 2rem;
+
+}
+
+header nav ul a {
+    color: black;
+    text-decoration: overline cornflowerblue;
+}
+
+header nav ul a:hover {
+    text-decoration: none;
+}
+
+#small-display {
+    display: none;
+}
+
+@media only screen and (max-width: 1031px) and (min-width:804px) {
+    #small-display {
+        display: inherit;
+    }
+    #desktop {
+        display: none;
+    }
+}
+@media only screen and (max-width: 803px) and (min-width: 705px){
+    #small-display {
+        display: inherit;
+    }
+    #desktop {
+        display: none;
+    }
+    header h1 {
+        font-size: 1rem;
+        margin: auto 0; 
+    }
+}
+
+@media only screen and (max-width: 704px) and (min-width: 638px) {
+    #small-display {
+        display: inherit;
+    }
+    #desktop {
+        display: none;
+    }
+    header h1 {
+        font-size: 1rem;
+        margin: auto 0; 
+    }
+}
+@media only screen and (max-width: 637px) {
+    #small-display {
+        display: none;
+    }
+    #desktop li {
+        display: block;
+        font-size: .8rem;
+    }
+    header h1 {
+        font-size: 1rem;
+        margin: auto 0; 
+    }
+}
+
+/* History */
+
+#history {
+    background-image: url(./images/friends_sea.jpg);
+    background-size:cover;
+    align-content: center;
+    justify-items: center;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+#history h1 {
+    background-color: whitesmoke;
+    display: inline-block;
+    text-align: center;
+    margin: auto 0;
+}
+#history p {
+    background-color: whitesmoke;
+    text-align: center;
+    width: 70%;
+}
+
+/* Past trips */
+
+#past img {
+    width: 70%;
+    height: 70%;
+    display: flex;
+}
+#past h1 {
+    margin: auto 0;
+    text-align: center;
+    padding-top: 3rem;
+}
+.destinations {
+    background-color: rgba(100, 148, 237, 0.644);
+    width: 70%;
+    height: 70%;
+    margin: 3rem;
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+}
+.destinations p {
+    width: 70%;
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: rgba(245, 245, 245, 0.526);
+}
+
+.destinations img, p {
+    justify-self: center;
+    margin: 1.5rem auto;
+}
+#austria, #taiwan, #nepal {
+    margin-left: 4rem;
+}
+#zealand, #spain {
+    justify-self: flex-end;
+    margin-right: 4rem;
+}
+.destinations h3 {
+    padding-left: 2rem;
+}
+
+@media only screen and (max-width: 629px) {
+    #austria, #taiwan, #nepal, #zealand, #spain {
+        justify-self: center;
+        margin: 2rem 0;
+    }
+}
+
+/* Future trips */
+#future {
+    text-align: center;
+}
+#future h1 {
+    margin: auto 0;
+}
+#future img {
+    width: 90%;
+    height: 90%;
+    display: block;
+}
+#future h3 {
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.755);
+}
+.plans {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+/* Meetups */
+
+#meet {
+    text-align: center;
+}
+#meet h1 {
+    margin: auto 0;
+}
+#details {
+    display: flex;
+}
+
+#details div {
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 671px)  and (min-width: 541px) {
+    #details h2 {
+        width: 88%;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    #details {
+        display: block;
+    }
+}
+
+/* Contacts */
+#contact-logo img {
+    width: 2rem;
+    height: 2rem;
+    padding: 1rem;
+
+}
+#contact-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact-logo p {
+    margin: auto 0;
+    padding-right: 2rem;
+}
+#contacts-container {
+    text-align: center;
+}
+
+@media only screen and (max-width: 440px) {
+    #contact-logo {
+        display: block;
+    }
+    #contact-logo img {
+        width: 2rem;
+        height: 2rem;
+        padding: .5rem 0;
+    }
+}
+
+/* footer */
+
+footer {
+    background-color: rgba(0, 0, 0, 0.237);
+    margin: auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p {
+    justify-self: flex-end;
+    margin: auto 0;
+    padding-right: 1rem;
+}
+footer h4 {
+    padding-left: 1rem;
+}
